@@ -1,11 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Dashboard from './components/Dashboard';
+import { createGlobalStyle } from 'styled-components';
 
-function App() {
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+`;
+
+const App = () => {
   return (
-    <div className="App">
-    </div>
+    <>
+      <GlobalStyle />
+      <Dashboard />
+    </>
   );
-}
+};
 
 export default App;
