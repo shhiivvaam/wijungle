@@ -27,7 +27,7 @@ const Dashboard = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/data')
+        axios.get('./data.json')
             .then(response => {
                 if (Array.isArray(response.data)) {
                     setData(response.data);
