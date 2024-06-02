@@ -22,12 +22,6 @@
 git clone https://github.com/shhiivvaam/wijungle.git
 
 cd wijungle
-
-cd server
-npm install
-npm run dev
-
-cd ..
 npm install
 npm start
 ```
